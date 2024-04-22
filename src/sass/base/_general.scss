@@ -1,10 +1,18 @@
-@use "../abstracts/" as *;
+@use "../abstracts" as *;
 
 body {
-  font-family: $font-family-base;
-  font-weight: $font-weight-default;
-  //font-size: fs(400);
-  color: $color-neutral-100;
-  line-height: 1.5;
-  font: inherit;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-size: $body-font-size;
+  color: $body-text-color;
+  line-height: $body-line-height;
+  background-color: $body-background-color;
+}
+
+a {
+  color: $link-color;
+
+  &:is(:hover, :focus) {
+    color: $link-color-hover;
+  }
 }
