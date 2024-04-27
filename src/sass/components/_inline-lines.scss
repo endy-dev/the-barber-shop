@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.inline-lines > * {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 1px;
+    height: $inline-lines-height;
+    background-color: $inline-lines-bg-color;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: $inline-lines-height;
+    background-color: $inline-lines-bg-color;
+  }
+}

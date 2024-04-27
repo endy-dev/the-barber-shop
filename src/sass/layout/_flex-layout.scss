@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.flexbox-grid {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--gap, $grid-gap);
+  justify-content: center;
+
+  > * {
+    flex-grow: 0;
+    width: var(--min, $flex-layout-size);
+  }
+}

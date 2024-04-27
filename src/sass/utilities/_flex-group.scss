@@ -6,8 +6,27 @@
   column-gap: var(--flex-column-gap, $flex-group-gap);
   row-gap: var(--flex-row-gap, calc($flex-group-gap / 2));
   width: fit-content;
+
+  &[data-flex="row"] {
+    flex-direction: column;
+    &.mx-auto {
+      justify-content: center;
+    }
+  }
+
+  &[data-flex="column"] {
+    flex-direction: row;
+    &.mx-auto {
+      align-items: center;
+    }
+  }
 }
 
-.flex-group.mx-auto {
+/* .flex-group {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  column-gap: var(--flex-column-gap, $flex-group-gap);
+  row-gap: var(--flex-row-gap, calc($flex-group-gap / 2));
 }
+ */

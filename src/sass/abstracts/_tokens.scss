@@ -2,6 +2,10 @@
 @use "typography" as *;
 @use "sizes" as *;
 
+$active-theme: $sleek;
+$enable-media-query-dark-mode: false;
+
+//cotextual
 $color-text-default: $color-primary-700;
 $color-background-default: $color-primary-100;
 $color-text-interactive-default: $color-accent-400;
@@ -39,6 +43,7 @@ $heading-text-transform: uppercase;
 //layout
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
+$flex-layout-size: $size-15;
 
 $hero-padding-block: clamp(15rem, 15vh, 20rem);
 $section-padding-block: clamp(5rem, 10vh, 6rem);
@@ -49,6 +54,14 @@ $container-min-margin-inline: $size-4;
 $container-max-width: 64rem;
 $container-max-width-narrow: 40rem;
 $container-max-width-wide: 75rem;
+
+//logo
+$logo-fill-default: $color-primary-400;
+$logo-fill-header: $color-primary-300;
+$logo-fill-footer: $color-accent-400;
+$logo-size-default: 15rem;
+$logo-size-header: $logo-size-default;
+$logo-size-footer: $logo-size-default;
 
 //buttons
 $button-text-transform: none;
@@ -80,3 +93,46 @@ $card-border-radius: $border-radius-2;
 $card-box-shadow: $box-shadow-1;
 $card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-600;
+
+//inline-lines
+$inline-lines-bg-color: $color-primary-700;
+$inline-lines-height: $size-7;
+
+// site header
+$site-header-background-color: $color-primary-800;
+$site-header-color: $color-neutral-100;
+$site-header-padding: $size-8 0;
+$site-header-margin: 0;
+$site-header-justification-desktop: space-between;
+$site-header-justification-mobile: center;
+$site-header-alignment: start;
+
+// navigation
+$navigation-color: $site-header-color;
+$navigation-color-hover: $color-primary-300;
+$navigation-font-family: $font-family-accent;
+$navigation-font-size: $font-size-400;
+$navigation-font-weight: $font-weight-bold;
+$navigation-letter-spacing: $letter-spacing-loose;
+$navigation-spacing: $size-9;
+
+//form labels
+$form-label-color: $body-text-color;
+$form-label-font-family: $body-font-family;
+$form-label-font-weight: $font-weight-bold;
+$form-label-font-size: $body-font-size;
+
+$form-input-color: $body-text-color;
+$form-input-font-family: $body-font-family;
+$form-input-font-weight: $font-weight-semi-bold;
+$form-input-font-size: $body-font-size;
+$form-input-background-color: $color-neutral-100;
+$form-input-border-default: 3px solid $color-primary-200;
+$form-input-border-focus: 3px solid $color-primary-400;
+$form-input-padding: $size-3;
+$form-input-border-radius: $border-radius-1;
+
+$form-placeholder-color: $color-primary-300;
+$form-placeholder-font-family: $form-input-font-family;
+$form-placeholder-font-weight: $form-input-font-weight;
+$form-placeholder-font-size: $body-font-size;
